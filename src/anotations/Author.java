@@ -6,8 +6,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MethodInfo {
-    String author() default "Name";
-    int dateOfCreation() default 2023;
-    String purpose();
+public @interface Author {
+    String name();
+    int dateOfCreation();
 }
